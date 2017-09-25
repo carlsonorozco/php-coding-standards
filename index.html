@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>PHP Coding Standards</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <!-- <link rel="stylesheet" href="css/theme/moon.css"> -->
+        <!-- <link rel="stylesheet" href="css/theme/serif.css"> -->
+        <!-- <link rel="stylesheet" href="css/theme/simple.css"> -->
+        <link rel="stylesheet" href="css/theme/white.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-background="#8892BF">
+                    <h1>PHP Coding Standards</h1>
+                    <h4><i>PSR & coding guidelines</i></h4>
+                </section>
+
+                <section data-background="#8892BF">
+                    <h3>Topics</h3>
+                    <ol>
+                        <li class="fragment fade-up">Why Coding Standards?</li>
+                        <li class="fragment fade-up">PSR</li>
+                        <li class="fragment fade-up">Clean Code</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <section data-background="http://i.giphy.com/E7yX6ZvDlYmEE.gif">
+                        <h2 class="fragment highlight-blue">Why Coding Standards?</h2>
+                    </section>
+
+                    <section data-background="#8892BF">
+                        <ol>
+                            <li class="fragment fade-up">It increase the consistency across large teams by enforcing uniformity of style for both code and comments.</li>
+                            <li class="fragment fade-up">It reduce bugs, simplify code review, achieve a shorter learning curve for new team members.</li>
+                            <li class="fragment fade-up">Be a better PHP Developer.</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-background="http://i.giphy.com/SqmkZ5IdwzTP2.gif">
+                        <h2 class="fragment highlight-blue">What is PSR?</h2>
+                    </section>
+
+                    <section data-background="#8892BF">
+                        <h3 class="fragment fade-up">PSR (PHP Standards Recommendation)</h3>
+                        <ul>
+                            <li class="fragment fade-up">www.php-fig.org</li>
+                            <li class="fragment fade-up">Laravel, Symfony 2, Yii 2, AWS SDK, CakePHP</li>
+                            <li class="fragment fade-up">40+ members (www.php-fig.org/members/)</li>
+                        </ul>
+                        <br><br>
+                        <h3 class="fragment fade-up">PHP-FIG Mission</h3>
+                        <ul>
+                            <li class="fragment fade-up">Finding the way of working together</li>
+                        </ul>
+                    </section>
+
+                    <section data-background="#8892BF">
+                        <h3 class="fragment fade-up">Accepted</h3>
+                        <ul>
+                            <li class="fragment fade-up">PSR-1 Basic Coding Standard</li>
+                            <li class="fragment fade-up">PSR-2 Coding Style Guide</li>
+                            <li class="fragment fade-up">PSR-3 Logger Interface</li>
+                            <li class="fragment fade-up">PSR-4 Autoloading Standard</li>
+                            <li class="fragment fade-up">PSR-6 Caching Interface</li>
+                            <li class="fragment fade-up">PSR-7 HTTP Message Interface</li>
+                            <li class="fragment fade-up">PSR-11 Container Interface</li>
+                            <li class="fragment fade-up">PSR-13 Hypermedia Links</li>
+                            <li class="fragment fade-up">PSR-16 Simple Cache</li>
+                        </ul>
+                    </section>
+
+                    <section data-background="#8892BF">
+                        <h3 class="fragment fade-up">Review</h3>
+                        <ul>
+                            <li class="fragment fade-up">None</li>
+                        </ul>
+                    </section>
+
+                    <section data-background="#8892BF">
+                        <h3 class="fragment fade-up">Draft</h3>
+                        <ul>
+                            <li class="fragment fade-up">PSR-5 PHPDoc Standard</li>
+                            <li class="fragment fade-up">PSR-8 Huggable Interface</li>
+                            <li class="fragment fade-up">PSR-9 Security Advisories</li>
+                            <li class="fragment fade-up">PSR-10 Security Reporting Process</li>
+                            <li class="fragment fade-up">PSR-12 Extended Coding Style Guide</li>
+                            <li class="fragment fade-up">PSR-14 Event Manager</li>
+                            <li class="fragment fade-up">PSR-15 HTTP Middlewares</li>
+                            <li class="fragment fade-up">PSR-17 HTTP Factories</li>
+                        </ul>
+                    </section>
+
+                    <section data-background="#8892BF">
+                        <h3 class="fragment fade-up">Deprecated</h3>
+                        <ul>
+                            <li class="fragment fade-up">PSR-0 Autoloading Standard</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+                    <h2><a href="http://www.php-fig.org/" title="Let us discuss PSR!" target="_new">Let us discuss PSR!</a></h2>
+                </section>
+
+                <section data-background="http://i.giphy.com/M9mpoxRuL0ZFK.gif">
+                    <h2><a href="https://github.com/jupeter/clean-code-php" title="How about clean code?" target="_new">How about clean code?</a></h2>
+                </section>
+
+                <section data-background="img/refactor.jpg">
+                    <h4 style="color: white">Let us refactorrrrrrr!</h4>
+                </section>
+
+                <section data-background="#8892BF">
+                    <blockquote cite="http://example.com/facts">
+                        <p>"Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live."</p>
+                        <p>~ John Woods</p>
+                    </blockquote>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
